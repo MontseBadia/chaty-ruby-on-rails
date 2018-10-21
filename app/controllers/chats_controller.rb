@@ -14,7 +14,7 @@ class ChatsController < ApplicationController
     if !@chat.persisted?
       @chat.save
       @chat.subscriptions.create(user_id: current_user.id)
-      @chat.subscriptions.create(user_id: other_user.id)
+      @chat.subscriptions.create(user_id: @other_user.id)
     end
     redirect_to user_chat_path(current_user, @chat, :other_user => @other_user.id)
   end
