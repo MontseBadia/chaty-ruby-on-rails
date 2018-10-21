@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root 'sessions#new'
+  root 'chats#index'
   resources :users do
     resources :chats, only: [:index, :show, :create]
   end
