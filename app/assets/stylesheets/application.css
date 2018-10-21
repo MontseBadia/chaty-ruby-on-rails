@@ -13,3 +13,23 @@
  *= require_tree .
  *= require_self
  */
+
+ .message-content {
+   border: 1px solid silver;
+   border-radius: 1.5em;
+   padding: 3px 8px 3px 8px;
+   background-color: #bbd5ec;
+   display: inline;
+   min-width: 50px;
+   box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.07);
+  }
+  
+  .username {
+    margin: 0;
+    padding: 0
+  }
+
+  .message-box {
+    width: 100%;
+    margin: 15px 0;
+  }
