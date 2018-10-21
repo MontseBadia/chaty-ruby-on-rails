@@ -1,4 +1,4 @@
-<%= form_for @user, url: sessions_path, method: :post do |f| %>
+<%= form_for User.new, url: sessions_path, method: :post do |f| %>
   <% flash.each do |k, value| %>
     <%= content_tag(:p, value) %>
   <% end %>
