@@ -10,6 +10,9 @@
   </head>
 
   <body>
+    <% if current_user %>
+      <nav><%= link_to 'Log out', session_path(current_user.id), method: :delete %></nav>
+    <% end %>
     <%= yield %>
   </body>
 </html>
